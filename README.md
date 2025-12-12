@@ -1,6 +1,6 @@
 # GSAP Showcase
 
-![GSAP Showcase Banner](assets/Gemini_Generated_Image_3qodvx3qodvx3qod)
+![GSAP Showcase Banner](assets/Gemini_Generated_Image_3qodvx3qodvx3qod.png)
 
 ## 🤖 Introduction
 
