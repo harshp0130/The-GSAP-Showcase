@@ -1,6 +1,6 @@
 # GSAP Showcase
 
-![Project Banner](<img width="1910" height="868" alt="Gsap" src="https://github.com/user-attachments/assets/1d8795c4-96cc-4b97-af97-556ab00a4789" />
+![GSAP Showcase Banner](assets/Gemini_Generated_Image_3qodvx3qodvx3qod)
 )
 ## 🤖 Introduction
 
