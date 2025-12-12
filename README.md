@@ -1,7 +1,7 @@
 # GSAP Showcase
 
 ![GSAP Showcase Banner](assets/Gemini_Generated_Image_3qodvx3qodvx3qod)
-)
+
 ## 🤖 Introduction
 
 **GSAP Showcase** is a high-performance, immersive website designed to push the boundaries of modern web animation. Inspired by the award-winning "Zentry" aesthetic, this project bridges the gap between gaming visuals and luxury UI design.
