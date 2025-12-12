@@ -1,6 +1,7 @@
 # GSAP Showcase
 
-![Project Banner](public/img/meta-image.png)
+![Project Banner](<img width="1910" height="868" alt="Gsap" src="https://github.com/user-attachments/assets/1d8795c4-96cc-4b97-af97-556ab00a4789" />
+)
 ## 🤖 Introduction
 
 **GSAP Showcase** is a high-performance, immersive website designed to push the boundaries of modern web animation. Inspired by the award-winning "Zentry" aesthetic, this project bridges the gap between gaming visuals and luxury UI design.
