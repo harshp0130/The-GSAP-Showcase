@@ -31,7 +31,6 @@ const Hero = () => {
 
   const handleMiniVdClick = () => {
     setHasClicked(true);
-
     setCurrentIndex((prevIndex) => (prevIndex % totalVideos) + 1);
   };
 
@@ -46,7 +45,21 @@ const Hero = () => {
           height: "100%",
           duration: 1,
           ease: "power1.inOut",
-          onStart: () => nextVdRef.current.play(),
+          onStart: () => {
+            // FIX 1: Safely handle video play to prevent "AbortError"
+            const video = nextVdRef.current;
+            if (video) {
+              const promise = video.play();
+              if (promise !== undefined) {
+                promise.catch((error) => {
+                  // Ignore AbortError, report others
+                  if (error.name !== "AbortError") {
+                    console.error("Video play failed:", error);
+                  }
+                });
+              }
+            }
+          },
         });
         gsap.from("#current-video", {
           transformOrigin: "center center",
@@ -86,7 +99,6 @@ const Hero = () => {
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {loading && (
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-          {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
           <div className="three-body">
             <div className="three-body__dot"></div>
             <div className="three-body__dot"></div>
@@ -106,8 +118,8 @@ const Hero = () => {
                 onClick={handleMiniVdClick}
                 className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
               >
+                {/* FIX 2: Removed ref={nextVdRef} from here. This is NOT the next video, it's the preview. */}
                 <video
-                  ref={nextVdRef}
                   src={getVideoSrc((currentIndex % totalVideos) + 1)}
                   loop
                   muted
