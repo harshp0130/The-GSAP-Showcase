@@ -1,7 +1,7 @@
 # GSAP Showcase
 
 <p align="center">
-  <img src="assets/Gemini_Generated_Image_3qodvx3qodvx3qod.png" width="100%" alt="GSAP Showcase Banner">
+  <img src="src/assets/banner.png" width="100%" alt="GSAP Showcase Banner">
 </p>
 
 ## 🤖 Introduction
